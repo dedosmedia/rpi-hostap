@@ -67,7 +67,7 @@ sudo docker run -d -t \
   -e OUTGOINGS=eth0 \
   --privileged \
   --net host \
-  dedosmedia/rpi3_ap
+  dedosmedia/rpi3_ap:1.0
 ```
 
 But before this, hostap usually requires that wlan0 interface to be already up, so before `docker run` take the interface up:
