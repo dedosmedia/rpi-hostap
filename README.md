@@ -1,6 +1,6 @@
 # Thanks to sdelrio/rpi-hostap
 
-This fork is based on gret job done by Sergio R. I have updated this image to allow us to turn our Rpi3 on an Access Point.
+This fork is based on great job done by Sergio R. I have updated this image to allow us to turn our Rpi3 on an Access Point.
 
 # Docker container stack: hostap + dhcp server 
 
