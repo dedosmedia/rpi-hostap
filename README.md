@@ -1,3 +1,8 @@
+# Thanks to sdelrio/rpi-hostap
+
+I have updated this docker image to allow us to turn our Rpi3 on an Access Point.
+
+
 # Docker container stack: hostap + dhcp server 
 
 Designed to work on **Raspberry Pi** (arm) using as base image alpine linux (very little size).
