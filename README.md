@@ -60,14 +60,14 @@ I've already uploaded the image to docker hubs, so you can run it from ther like
 sudo docker run -d -t \
   -e INTERFACE=wlan0 \
   -e CHANNEL=6 \
-  - e SSID=runssid \
+  -e SSID=runssid \
   -e APADDR=192.168.254.1 \
   -e SUBNET=192.168.254.0 \
   -e WPA_PASSPHRASE=passw0rd \
   -e OUTGOINGS=eth0 \
   --privileged \
   --net host \
-  sdelrio/rpi-hostap:latest
+  dedosmedia/rpi3_ap
 ```
 
 But before this, hostap usually requires that wlan0 interface to be already up, so before `docker run` take the interface up:
