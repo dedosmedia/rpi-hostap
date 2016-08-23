@@ -20,7 +20,7 @@ true ${CHANNEL:=11}
 true ${WPA_PASSPHRASE:=passw0rd}
 true ${HW_MODE:=g}
 true ${DRIVER:=nl80211}
-true ${HT_CAPAB:=[HT40-][SHORT-GI-20][SHORT-GI-40]}
+true ${HT_CAPAB:=[HT40][SHORT-GI-20][DSSS_CCK-40]}
 
 
 if [ ! -f "/etc/hostapd.conf" ] ; then
@@ -62,6 +62,7 @@ for i in ip_dynaddr ip_forward ; do
   fi
 done
 
+
 cat /proc/sys/net/ipv4/ip_dynaddr 
 cat /proc/sys/net/ipv4/ip_forward
 
@@ -94,4 +95,3 @@ dhcpd wlan0
 
 echo "Starting HostAP daemon ..."
 /usr/sbin/hostapd /etc/hostapd.conf 
-
